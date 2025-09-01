@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+h1, h2, h3 {
+  margin: 0.5rem 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a.active {
+  border-bottom: 2px solid white;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  background: url("https://www.mercedes-benz.com/etc/designs/mb-b2c/images/meta/mercedes-benz.jpg") no-repeat center/cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero .btn {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: white;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* About */
+.about, .services, .contact {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Services Grid */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.service-card .price {
+  font-size: 1.2rem;
+  color: green;
+  font-weight: bold;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #444;
+}
+
+/* Footer */
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
